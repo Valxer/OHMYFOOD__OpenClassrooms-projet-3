@@ -11,8 +11,8 @@
 }
 
 @font-face {
-	font-family: "Robotothin";
-	src: url("fonts/Roboto/Roboto-Thin.ttf");
+  font-family: "Robotothin";
+  src: url("fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
@@ -36,8 +36,13 @@ h1 {
 
 //ajustements aux différentes parties
 
-a:link {
-  text-decoration: none;
+a {
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    color: black;
+  }
 }
 
 h2 {
@@ -47,9 +52,9 @@ h2 {
 
 .presentation {
   &__txt {
-	  font-family: "Robotothin";
+    font-family: "Robotothin";
     font-size: 1.2em;
-	font-weight: 600;
+    font-weight: 600;
   }
   &__btn {
     font-size: 1.2em;
@@ -68,19 +73,16 @@ h2 {
       font-weight: lighter;
     }
   }
-  &__link:visited {
-    color: black;
-  }
   &__like {
-	  font-size: 1.7em;
+    font-size: 1.7em;
   }
 }
 
 .footer {
-	&__txtbox__line {
-		font-size: 1.2em;
-		i {
-			font-size: 0.7em;
-		}
-	}
+  &__txtbox__line {
+    font-size: 1.2em;
+    i {
+      font-size: 0.7em;
+    }
+  }
 }

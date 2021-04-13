@@ -30,6 +30,9 @@ h1 {
 a:link {
   text-decoration: none;
 }
+a:visited {
+  color: black;
+}
 
 h2 {
   font-family: "Robotobold";
@@ -53,9 +56,6 @@ h2 {
 .cardbox__txt__place {
   font-size: 1.2em;
   font-weight: lighter;
-}
-.cardbox__link:visited {
-  color: black;
 }
 .cardbox__like {
   font-size: 1.7em;
