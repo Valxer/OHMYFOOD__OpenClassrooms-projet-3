@@ -28,7 +28,8 @@ body {
   font-weight: 400;
 }
 
-h1 {
+h1,
+.food__header__title {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: lighter;
@@ -45,19 +46,31 @@ a {
   }
 }
 
+%littlesize {
+	font-size: 25px;
+}
+
+%mediumsize {
+	font-size: 30px;
+}
+
+%bigsize {
+	font-size: 35px;
+}
+
 h2 {
   font-family: "Robotobold";
-  font-size: 1.7em;
+  @extend %bigsize;
 }
 
 .presentation {
   &__txt {
     font-family: "Robotothin";
-    font-size: 1.2em;
+    @extend %littlesize;
     font-weight: 600;
   }
   &__btn {
-    font-size: 1.2em;
+    @extend %littlesize;
     font-weight: bolder;
   }
 }
@@ -65,24 +78,19 @@ h2 {
 .cardbox {
   &__txt {
     &__title {
-      font-family: "Robotobold";
-      font-size: 1.4em;
+      @extend h2;
+      @extend %mediumsize;
     }
     &__place {
-      font-size: 1.2em;
+      @extend %littlesize;
       font-weight: lighter;
     }
   }
   &__like {
-    font-size: 1.7em;
+    @extend %bigsize;
   }
 }
 
-.footer {
-  &__txtbox__line {
-    font-size: 1.2em;
-    i {
-      font-size: 0.7em;
-    }
+.footer__txt {
+	@extend %littlesize;
   }
-}
