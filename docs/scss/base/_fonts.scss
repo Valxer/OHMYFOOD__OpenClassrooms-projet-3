@@ -47,15 +47,15 @@ a {
 }
 
 %littlesize {
-	font-size: 25px;
+  font-size: 25px;
 }
 
 %mediumsize {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 %bigsize {
-	font-size: 35px;
+  font-size: 35px;
 }
 
 h2 {
@@ -92,5 +92,5 @@ h2 {
 }
 
 .footer__txt {
-	@extend %littlesize;
-  }
+  @extend %littlesize;
+}
