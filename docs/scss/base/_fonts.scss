@@ -28,10 +28,15 @@ body {
   font-weight: 400;
 }
 
-h1,
 .food__header__title {
   @extend %special;
   @extend %mediumsize;
+  font-weight: lighter;
+}
+
+h1 {
+  @extend %special;
+  @extend %littlesize;
   font-weight: lighter;
 }
 

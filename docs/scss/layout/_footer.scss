@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------------
+-----------Règles du footer----------------------------------------
+----------------------------------------------------------------- */
+
+.footer {
+  width: 104%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-left: -10px;
+  background-color: $footer;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  &__title,
+  &__txtbox {
+    margin-left: 25px;
+  }
+  &__txtbox__line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 200px;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    &__icon {
+      width: 30px;
+    }
+  }
+}
