@@ -1,3 +1,71 @@
+/* Polices de toutes les pages*/
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Robotobold";
+  src: url("fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Robotothin";
+  src: url("fonts/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
 
+h1 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Robotobold";
+  font-size: 1.7em;
+}
+
+.presentation__txt {
+  font-family: "Robotothin";
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.presentation__btn {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.cardbox__txt__title {
+  font-family: "Robotobold";
+  font-size: 1.4em;
+}
+.cardbox__txt__place {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+.cardbox__link:visited {
+  color: black;
+}
+.cardbox__like {
+  font-size: 1.7em;
+}
+
+.footer__txtbox__line {
+  font-size: 1.2em;
+}
+.footer__txtbox__line i {
+  font-size: 0.7em;
+}
 
 /*# sourceMappingURL=style.css.map */
