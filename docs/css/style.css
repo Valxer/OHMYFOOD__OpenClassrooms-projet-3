@@ -1,4 +1,45 @@
-/* Polices de toutes les pages*/
+@charset "UTF-8";
+/* Type de police */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.dish_price, .cardbox__txt__title, h2 {
+  font-family: "Robotobold";
+}
+
+.food__block__title, .presentation__txt {
+  font-family: "Robotothin";
+}
+
+h1,
+.food__header__title {
+  font-family: "Shrikhand";
+}
+
+/* Tailles de polices */
+.food__block__title, body {
+  font-size: 20px;
+}
+
+.dish_price, .dish_sub, .footer__txtbox__line__icon, .footer__txt {
+  font-size: 15px;
+}
+
+.cardbox__txt__place, .presentation__btn, .presentation__txt {
+  font-size: 25px;
+}
+
+.cardbox__txt__title, h1,
+.food__header__title {
+  font-size: 30px;
+}
+
+.cardbox__like, h2 {
+  font-size: 35px;
+}
+
+/* Règles spéciales de polices*/
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto/Roboto-Regular.ttf");
@@ -16,15 +57,11 @@
   src: url("fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 20px;
   font-weight: 400;
 }
 
 h1,
 .food__header__title {
-  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  font-size: 30px;
   font-weight: lighter;
 }
 
@@ -35,24 +72,7 @@ a:visited {
   color: black;
 }
 
-.footer__txt, .cardbox__txt__place, .presentation__btn, .presentation__txt {
-  font-size: 25px;
-}
-
-.cardbox__txt__title {
-  font-size: 30px;
-}
-
-.cardbox__like, h2, .cardbox__txt__title {
-  font-size: 35px;
-}
-
-h2, .cardbox__txt__title {
-  font-family: "Robotobold";
-}
-
 .presentation__txt {
-  font-family: "Robotothin";
   font-weight: 600;
 }
 .presentation__btn {

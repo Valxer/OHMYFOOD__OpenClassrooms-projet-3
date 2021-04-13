@@ -1,4 +1,4 @@
-/* Polices de toutes les pages*/
+/* Règles spéciales de polices*/
 
 @font-face {
   font-family: "Roboto";
@@ -23,15 +23,15 @@
 //Règles générales de polices
 
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  @extend %default;
+  @extend %defaultsize;
   font-weight: 400;
 }
 
 h1,
 .food__header__title {
-  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  @extend %special;
+  @extend %mediumsize;
   font-weight: lighter;
 }
 
@@ -46,26 +46,14 @@ a {
   }
 }
 
-%littlesize {
-  font-size: 25px;
-}
-
-%mediumsize {
-  font-size: 30px;
-}
-
-%bigsize {
-  font-size: 35px;
-}
-
 h2 {
-  font-family: "Robotobold";
+  @extend %bold;
   @extend %bigsize;
 }
 
 .presentation {
   &__txt {
-    font-family: "Robotothin";
+    @extend %thin;
     @extend %littlesize;
     font-weight: 600;
   }
@@ -78,8 +66,8 @@ h2 {
 .cardbox {
   &__txt {
     &__title {
-      @extend h2;
       @extend %mediumsize;
+      @extend %bold;
     }
     &__place {
       @extend %littlesize;
@@ -92,5 +80,22 @@ h2 {
 }
 
 .footer__txt {
-  @extend %littlesize;
+  @extend %tinysize;
+  &box__line__icon {
+    @extend %tinysize;
+  }
+}
+
+.food__block__title {
+  @extend %thin;
+  @extend %defaultsize;
+}
+
+.dish_sub {
+  @extend %tinysize;
+}
+
+.dish_price {
+  @extend %tinysize;
+  @extend %bold;
 }

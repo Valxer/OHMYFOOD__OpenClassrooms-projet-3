@@ -1,0 +1,39 @@
+/* Type de police */
+
+%default {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+%bold {
+	font-family: "Robotobold";
+}
+
+%thin {
+	font-family: "Robotothin";
+}
+
+%special {
+	font-family: "Shrikhand";
+}
+
+/* Tailles de polices */
+
+%defaultsize {
+	font-size: 20px;
+}
+
+%tinysize {
+	font-size: 15px;
+}
+
+%littlesize {
+  font-size: 25px;
+}
+
+%mediumsize {
+  font-size: 30px;
+}
+
+%bigsize {
+  font-size: 35px;
+}
