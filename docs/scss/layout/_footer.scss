@@ -3,14 +3,14 @@
 ----------------------------------------------------------------- */
 
 .footer {
-  width: 104%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-left: -10px;
   background-color: $footer;
   color: white;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   &__title,
   &__txtbox {
     margin-left: 25px;

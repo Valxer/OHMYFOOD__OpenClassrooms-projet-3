@@ -28,10 +28,16 @@ body {
   font-weight: 400;
 }
 
-.food__header__title {
-  @extend %special;
-  @extend %mediumsize;
-  font-weight: lighter;
+.food__header {
+  &__title {
+    @extend %special;
+    @extend %mediumsize;
+    font-weight: lighter;
+  }
+  &__like {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
 }
 
 h1 {
@@ -93,7 +99,11 @@ h2 {
 
 .food__block__title {
   @extend %thin;
-  @extend %defaultsize;
+  @extend %foodsize;
+}
+
+.dish_name {
+  @extend %foodsize;
 }
 
 .dish_sub {
@@ -103,4 +113,8 @@ h2 {
 .dish_price {
   @extend %tinysize;
   @extend %bold;
+}
+
+.food__btn {
+  @extend %foodsize;
 }

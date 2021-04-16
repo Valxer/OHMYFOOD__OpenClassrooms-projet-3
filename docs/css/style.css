@@ -17,12 +17,16 @@ h1, .food__header__title {
 }
 
 /* Tailles de polices */
-.food__block__title, body {
+body {
   font-size: 20px;
 }
 
 .dish_price, .dish_sub, .footer__txtbox__line__icon, .footer__txt {
   font-size: 15px;
+}
+
+.food__btn, .dish_name, .food__block__title {
+  font-size: 18px;
 }
 
 .cardbox__txt__place, .presentation__btn, .presentation__txt, h1 {
@@ -61,6 +65,10 @@ body {
 .food__header__title {
   font-weight: lighter;
 }
+.food__header__like {
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 
 h1 {
   font-weight: lighter;
@@ -83,15 +91,40 @@ a:visited {
 .cardbox__txt__place {
   font-weight: lighter;
 }
+/*              Règles globales           */
+html,
+body {
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+}
+
+body {
+  margin: 0px;
+}
+
+.food__btn {
+  margin: 50px 0px 50px 0px;
+  width: 50%;
+  height: 50px;
+  border-radius: 30px;
+  border-style: none;
+  background: linear-gradient(170deg, #ff79da, #ff79da 50%, #6356dc);
+  color: white;
+  box-shadow: -5px 5px 5px lightgrey;
+}
+
 /* ----------------------------------------------------------------
 -----------Règles du header----------------------------------------
 ----------------------------------------------------------------- */
 .header {
   height: 50px;
-  width: 98%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  overflow-x: hidden;
 }
 .header__homelink {
   width: 10%;
@@ -117,14 +150,14 @@ a:visited {
 -----------Règles du footer----------------------------------------
 ----------------------------------------------------------------- */
 .footer {
-  width: 104%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-left: -10px;
   background-color: #353535;
   color: white;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .footer__title, .footer__txtbox {
   margin-left: 25px;
@@ -140,6 +173,126 @@ a:visited {
 }
 .footer__txtbox__line__icon {
   width: 30px;
+}
+
+/* ----------------------------------------------------------------
+-----------Règles bannières----------------------------------------
+----------------------------------------------------------------- */
+.banner {
+  height: 275px;
+  width: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------------------------------------------------
+-----------Règles section menu--------------------------------------
+----------------------------------------------------------------- */
+.food {
+  background-color: #f6f6f6;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -50px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.food__header {
+  width: 90%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+.food__header__title {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.food__header__like {
+  width: 10%;
+}
+.food__block {
+  width: 90%;
+}
+.food__block__title {
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.line {
+  margin-top: 0px;
+  width: 40px;
+  border-top: 2px solid #99e2d0;
+}
+
+.dishes {
+  width: 100%;
+}
+.dishes__box {
+  width: 100%;
+  margin-top: 15px;
+  background-color: white;
+  box-shadow: -5px 5px 5px lightgrey;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dishes__box__txt {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dish_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+}
+
+.dish_sub {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 5px 10px 10px 10px;
+  margin: 0px;
+}
+
+.dish_price {
+  width: 10%;
+  align-self: flex-end;
+  padding-right: 15px;
+}
+
+/*à changer quand animation*/
+.check {
+  width: 10%;
+  display: none;
+}
+
+#palette {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+#delice {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+#francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#note {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

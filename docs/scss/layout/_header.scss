@@ -4,10 +4,13 @@
 
 .header {
   height: 50px;
-  width: 98%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  overflow-x: hidden;
   &__homelink {
     width: 10%;
     min-width: 50px;
