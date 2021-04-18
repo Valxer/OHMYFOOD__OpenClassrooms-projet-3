@@ -8,7 +8,7 @@ body {
   font-family: "Robotobold";
 }
 
-.food__block__title, .presentation__txt {
+.food__block__title, .cardbox__txt__place, .presentation__txt {
   font-family: "Robotothin";
 }
 
@@ -17,27 +17,27 @@ h1, .food__header__title {
 }
 
 /* Tailles de polices */
-body {
+.cardbox__like, body {
   font-size: 20px;
 }
 
-.dish_price, .dish_sub, .footer__txtbox__line__icon, .footer__txt {
+.dish_price, .dish_sub, .footer__txtbox__line__icon, .footer__txt, .fa-store, .fa-bars, .howto__steps__box__nbr, .howto__steps__box__txt, .search__txt {
   font-size: 15px;
 }
 
-.food__btn, .dish_name, .food__block__title {
+.btn, .dish_name, .food__block__title, .cardbox__txt__place, .cardbox__txt__title, .presentation__txt {
   font-size: 18px;
 }
 
-.cardbox__txt__place, .presentation__btn, .presentation__txt, h1 {
+.title, h1 {
   font-size: 25px;
 }
 
-.cardbox__txt__title, .food__header__title {
+.food__header__title {
   font-size: 30px;
 }
 
-.cardbox__like, h2 {
+h2 {
   font-size: 35px;
 }
 
@@ -81,16 +81,34 @@ a:visited {
   color: black;
 }
 
+.search {
+  color: #353535;
+}
 .presentation__txt {
+  color: #353535;
   font-weight: 600;
 }
-.presentation__btn {
-  font-weight: bolder;
+
+.fa-ellipsis-v {
+  font-size: 13px;
+}
+
+.fa-store {
+  color: #9356dc;
+}
+
+.grey {
+  color: #7e7e7e;
 }
 
 .cardbox__txt__place {
-  font-weight: lighter;
+  font-weight: bolder;
 }
+.cardbox__like {
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
 /*              Règles globales           */
 html,
 body {
@@ -102,15 +120,57 @@ body {
   margin: 0px;
 }
 
-.food__btn {
+.btn {
   margin: 50px 0px 50px 0px;
-  width: 225px;
+  width: 250px;
   height: 50px;
   border-radius: 30px;
   border-style: none;
-  background: linear-gradient(170deg, #ff79da, #ff79da 50%, #6356dc);
+  background: linear-gradient(170deg, #ff79da, #ff79da 50%, #9356dc);
   color: white;
   box-shadow: -5px 5px 5px lightgrey;
+}
+
+/* ----------------------------------------------------------------
+-----------Section restaurants -----------------------------------
+----------------------------------------------------------------- */
+.cardbox {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: -3px 3px 5px #d7d7d7;
+}
+.cardbox__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardbox__img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+}
+.cardbox__subtxt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.cardbox__txt {
+  width: 90%;
+}
+.cardbox__txt__title {
+  margin: 15px 0px 5px 0px;
+}
+.cardbox__txt__place {
+  margin: 0px 0px 15px 0px;
+}
+.cardbox__like {
+  width: 10%;
 }
 
 /* ----------------------------------------------------------------
@@ -279,6 +339,25 @@ body {
   display: none;
 }
 
+/* ----------------------------------------------------------------
+-----------Barre de lieu accueil-----------------------------------
+----------------------------------------------------------------- */
+.search {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 3px #b9b9b9;
+}
+.search__icon {
+  margin-right: 15px;
+}
+
+/* ----------------------------------------------------------------
+-----------Images bannière ----------------------------------------
+----------------------------------------------------------------- */
 #palette {
   background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
@@ -293,6 +372,111 @@ body {
 
 #note {
   background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+/* ----------------------------------------------------------------
+-----------Presentation Accueil-----------------------------------
+----------------------------------------------------------------- */
+.presentation {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation__title {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.presentation__txt {
+  margin-top: 0px;
+  width: 90%;
+  text-align: center;
+}
+.presentation__btn {
+  margin-top: 15px;
+}
+
+/* ----------------------------------------------------------------
+-----------Section fonctionnement----------------------------------
+----------------------------------------------------------------- */
+.howto {
+  background-color: white;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.howto__title {
+  align-self: flex-start;
+  padding-left: 5%;
+}
+.howto__steps {
+  width: 90%;
+  margin-bottom: 50px;
+}
+.howto__steps__box {
+  height: 70px;
+  margin-left: 12.5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  box-shadow: -3px 3px 5px #d7d7d7;
+}
+.howto__steps__box__nbr {
+  color: white;
+  background-color: #9356dc;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -12.5px;
+}
+.howto__steps__box__icon {
+  margin-left: 20px;
+}
+.howto__steps__box__icon2 {
+  margin: -1px 0px 0px 1px;
+}
+.howto__steps__box__txt {
+  margin-left: 20px;
+}
+
+.alone {
+  width: 20px;
+}
+
+.part1 {
+  width: 5px;
+}
+
+.part2 {
+  width: 14px;
+}
+
+/* ----------------------------------------------------------------
+-----------Section restaurants -----------------------------------
+----------------------------------------------------------------- */
+.restaurants {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurants__title {
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+.restaurants__container {
+  width: 90%;
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+/* ----------------------------------------------------------------
+-----------Barre de lieu accueil-----------------------------------
+----------------------------------------------------------------- */
+
+.search {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234, 234, 234);
+  box-shadow: inset 0px 2px 3px rgb(185, 185, 185);
+  &__icon {
+    margin-right: 15px;
+  }
+}

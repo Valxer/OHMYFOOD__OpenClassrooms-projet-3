@@ -62,31 +62,66 @@ h2 {
   @extend %bigsize;
 }
 
+.search {
+  color: $footer;
+  &__txt {
+    @extend %tinysize;
+  }
+}
+
+.title {
+  @extend %littlesize;
+}
+
 .presentation {
   &__txt {
+    color: $footer;
+    @extend %foodsize;
     @extend %thin;
-    @extend %littlesize;
     font-weight: 600;
   }
-  &__btn {
-    @extend %littlesize;
-    font-weight: bolder;
+}
+
+.howto__steps__box {
+  &__nbr,
+  &__txt {
+    @extend %tinysize;
   }
+}
+
+.fa-ellipsis-v {
+  font-size: 13px;
+}
+
+.fa-bars {
+  @extend %tinysize;
+}
+
+.fa-store {
+  @extend %tinysize;
+  color: $primary;
+}
+
+.grey {
+  color: rgb(126,126,126);
 }
 
 .cardbox {
   &__txt {
     &__title {
-      @extend %mediumsize;
+      @extend %foodsize;
       @extend %bold;
     }
     &__place {
-      @extend %littlesize;
-      font-weight: lighter;
+      @extend %foodsize;
+      @extend %thin;
+      font-weight: bolder;
     }
   }
   &__like {
-    @extend %bigsize;
+    @extend %defaultsize;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
 }
 
@@ -115,6 +150,6 @@ h2 {
   @extend %bold;
 }
 
-.food__btn {
+.btn {
   @extend %foodsize;
 }

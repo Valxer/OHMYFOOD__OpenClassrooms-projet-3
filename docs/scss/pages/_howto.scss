@@ -1,0 +1,62 @@
+/* ----------------------------------------------------------------
+-----------Section fonctionnement----------------------------------
+----------------------------------------------------------------- */
+
+.howto {
+  background-color: white;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    align-self: flex-start;
+    padding-left: 5%;
+  }
+  &__steps {
+    width: 90%;
+    margin-bottom: 50px;
+    &__box {
+      height: 70px;
+      margin-left: 12.5px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background-color: rgb(246, 246, 246);
+      box-shadow: -3px 3px 5px rgb(215, 215, 215);
+      &__nbr {
+        color: white;
+        background-color: $primary;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -12.5px;
+      }
+      &__icon {
+        margin-left: 20px;
+        &2 {
+          margin: -1px 0px 0px 1px;
+        }
+      }
+      &__txt {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.alone {
+  width: 20px;
+}
+
+.part1 {
+  width: 5px;
+}
+
+.part2 {
+  width: 14px;
+}

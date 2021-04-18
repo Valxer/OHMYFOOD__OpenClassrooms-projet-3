@@ -1,0 +1,42 @@
+/* ----------------------------------------------------------------
+-----------Section restaurants -----------------------------------
+----------------------------------------------------------------- */
+
+.cardbox {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: -3px 3px 5px rgb(215, 215, 215);
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 175px;
+  }
+  &__subtxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  &__txt {
+    width: 90%;
+    &__title {
+      margin: 15px 0px 5px 0px;
+    }
+    &__place {
+      margin: 0px 0px 15px 0px;
+    }
+  }
+  &__like {
+    width: 10%;
+  }
+}

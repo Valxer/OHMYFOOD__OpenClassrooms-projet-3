@@ -3,9 +3,14 @@
 @import "utils/placeholders";
 @import "base/fonts";
 @import "base/mainrules";
-@import "components/order_btn";
+@import "components/btn";
+@import "components/cardbox";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/banner";
 @import "layout/food";
+@import "layout/searchbar";
 @import "pages/bannerpics";
+@import "pages/presentation";
+@import "pages/howto";
+@import "pages/restaurants";
