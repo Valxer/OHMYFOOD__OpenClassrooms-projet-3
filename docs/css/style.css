@@ -17,7 +17,7 @@ h1, .food__header__title {
 }
 
 /* Tailles de polices */
-.cardbox__like, body {
+body {
   font-size: 20px;
 }
 
@@ -29,7 +29,7 @@ h1, .food__header__title {
   font-size: 18px;
 }
 
-.title, h1 {
+.cardbox__like, .title, h1 {
   font-size: 25px;
 }
 
@@ -108,11 +108,6 @@ a:visited {
 .cardbox__txt__place {
   font-weight: bolder;
 }
-.cardbox__like {
-  color: white;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
 /*              Règles globales           */
 html,
 body {
@@ -188,6 +183,15 @@ body {
 }
 .cardbox__like {
   width: 10%;
+}
+
+/* ----------------------------------------------------------------
+-----------Animation like -----------------------------------------
+----------------------------------------------------------------- */
+.like {
+  background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ----------------------------------------------------------------

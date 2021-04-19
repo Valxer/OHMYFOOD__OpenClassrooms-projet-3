@@ -1,3 +1,9 @@
 /* ----------------------------------------------------------------
 -----------Animation like -----------------------------------------
 ----------------------------------------------------------------- */
+
+.like {
+	background: -webkit-linear-gradient(-90deg, $primary, $secondary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
