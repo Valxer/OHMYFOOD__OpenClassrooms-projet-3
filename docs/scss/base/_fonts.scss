@@ -35,8 +35,7 @@ body {
     font-weight: lighter;
   }
   &__like {
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+   @extend %littlesize;
   }
 }
 
@@ -67,6 +66,8 @@ h2 {
   color: $footer;
   &__txt {
     @extend %tinysize;
+    @extend %bold;
+    color: $footer;
   }
 }
 
@@ -156,4 +157,10 @@ h2 {
 
 .btn {
   @extend %foodsize;
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
 }

@@ -4,6 +4,7 @@
 
 .search {
   width: 100%;
+  height: 50px;
   margin-top: 0px;
   display: flex;
   justify-content: center;
@@ -13,4 +14,9 @@
   &__icon {
     margin-right: 15px;
   }
+  // &__txt {
+  //   background-color: rgb(234, 234, 234);
+  //   border-style: none;
+  //
+  //  }
 }

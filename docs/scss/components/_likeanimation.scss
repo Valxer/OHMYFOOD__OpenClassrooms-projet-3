@@ -2,8 +2,17 @@
 -----------Animation like -----------------------------------------
 ----------------------------------------------------------------- */
 
-.like {
-	background: -webkit-linear-gradient(-90deg, $primary, $secondary);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.like2 {
+  background: -webkit-linear-gradient(-90deg, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.like1 {
+	z-index: 1;
+	background: white;
+  &:hover {
+    opacity: 0;
+    transition: 700ms;
+  }
 }

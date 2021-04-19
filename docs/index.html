@@ -21,12 +21,13 @@
 	<section class="search">
 		<i class="fas fa-map-marker-alt search__icon"></i>
 		<h3 class="search__txt">Paris, Belleville</h3>
+	<!--	<input class="search__txt" aria-label="Chercher un restaurant" placeholder="Paris, Bellevile" type="text"> -->
 	</section>
 
 	<section class="presentation">
 		<h2 class="presentation__title title">Réservez le menu qui vous convient</h2>
 		<p class="presentation__txt">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-		<button class="presentation__btn btn">Explorer nos restaurants</button>
+		<button class="presentation__btn btn"><a href="#restaurants" class="btn__link">Explorer nos restaurants</a></button>
 	</section>
 
 	<section class="howto">
@@ -51,7 +52,7 @@
 		</div>
 	</section>
 
-	<section class="restaurants">
+	<section class="restaurants" id="restaurants">
 		<h2 class="restaurants__title title">Restaurants</h2>
 		<div class="restaurants__container">
 			<div class="cardbox">
@@ -64,7 +65,10 @@
 							<h3 class="cardbox__txt__title">La palette du goût</h3>
 							<p class="cardbox__txt__place">Ménilmontant</p>
 						</div>
-						<i class="fas fa-heart cardbox__like like"></i>
+						<div class="cardbox__like">
+							<i class="far fa-heart like1"></i>
+							<i class="fas fa-heart like2"></i>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -78,7 +82,10 @@
 							<h3 class="cardbox__txt__title">La note enchantée</h3>
 							<p class="cardbox__txt__place">Charonne</p>
 						</div>
-						<i class="fas fa-heart cardbox__like like"></i>
+						<div class="cardbox__like">
+							<i class="far fa-heart like1"></i>
+							<i class="fas fa-heart like2"></i>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -91,7 +98,10 @@
 							<h3 class="cardbox__txt__title">À la française</h3>
 							<p class="cardbox__txt__place">Cité Rouge</p>
 						</div>
-						<i class="fas fa-heart cardbox__like like"></i>
+						<div class="cardbox__like">
+							<i class="far fa-heart like1"></i>
+							<i class="fas fa-heart like2"></i>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -104,7 +114,10 @@
 							<h3 class="cardbox__txt__title">Le délice des sens</h3>
 							<p class="cardbox__txt__place">Folie-Méricourt</p>
 						</div>
-						<i class="fas fa-heart cardbox__like like"></i>
+						<div class="cardbox__like">
+							<i class="far fa-heart like1"></i>
+							<i class="fas fa-heart like2"></i>
+						</div>
 					</div>
 				</a>
 			</div>
