@@ -103,10 +103,15 @@ h2 {
 }
 
 .grey {
-  color: rgb(126,126,126);
+  color: rgb(126, 126, 126);
 }
 
 .cardbox {
+  &__img__txt {
+    @extend %tinysize;
+    @extend %bold;
+    color: rgb(19, 146, 115);
+  }
   &__txt {
     &__title {
       @extend %foodsize;
