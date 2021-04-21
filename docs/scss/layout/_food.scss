@@ -49,8 +49,23 @@
 
 .dishes {
   width: 100%;
+  @include both {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   &__box {
     width: 100%;
+    height: 65px;
+    @include tabletonly {
+      width: 48%;
+      height: 80px;
+    }
+    @include desktoponly {
+      width: 31%;
+      margin-bottom: 50px;
+      height: 80px;
+    }
     margin-top: 15px;
     background-color: white;
     box-shadow: -5px 5px 5px lightgrey;
@@ -93,9 +108,15 @@
 .check {
   width: 50px;
   background-color: $tertiary;
-  height: 65px;
+  height: 100px;
   display: none;
   &__icon {
     color: white;
+  }
+}
+
+.card-4 {
+  @include desktoponly {
+    margin-top: -30px;
   }
 }

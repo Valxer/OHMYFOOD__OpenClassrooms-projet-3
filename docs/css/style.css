@@ -125,17 +125,6 @@ body {
   margin: 0px;
 }
 
-@media screen and (min-width: 1025px) {
-  body {
-    background-color: #98b8dd;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-  body {
-    background-color: #8ec97f;
-  }
-}
-
 /* ----------------------------------------------------------------
 -----------Boutons pages ------------------------------------------
 ----------------------------------------------------------------- */
@@ -482,8 +471,16 @@ body {
 .dishes {
   width: 100%;
 }
+@media screen and (min-width: 800px) {
+  .dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .dishes__box {
   width: 100%;
+  height: 65px;
   margin-top: 15px;
   background-color: white;
   box-shadow: -5px 5px 5px lightgrey;
@@ -492,6 +489,19 @@ body {
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .dishes__box {
+    width: 48%;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .dishes__box {
+    width: 31%;
+    margin-bottom: 50px;
+    height: 80px;
+  }
 }
 .dishes__box__txt {
   width: 90%;
@@ -525,11 +535,17 @@ body {
 .check {
   width: 50px;
   background-color: #99e2d0;
-  height: 65px;
+  height: 100px;
   display: none;
 }
 .check__icon {
   color: white;
+}
+
+@media screen and (min-width: 1025px) {
+  .card-4 {
+    margin-top: -30px;
+  }
 }
 
 /* ----------------------------------------------------------------
