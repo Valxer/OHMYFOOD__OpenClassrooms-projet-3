@@ -223,7 +223,7 @@ body {
   background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .like1 {
