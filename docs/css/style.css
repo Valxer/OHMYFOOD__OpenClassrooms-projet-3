@@ -125,6 +125,17 @@ body {
   margin: 0px;
 }
 
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: #98b8dd;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  body {
+    background-color: #8ec97f;
+  }
+}
+
 /* ----------------------------------------------------------------
 -----------Boutons pages ------------------------------------------
 ----------------------------------------------------------------- */
@@ -150,6 +161,16 @@ body {
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: -3px 3px 5px #d7d7d7;
+}
+@media screen and (min-width: 1025px) {
+  .cardbox {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .cardbox {
+    margin-bottom: 40px;
+  }
 }
 .cardbox__link {
   width: 100%;
@@ -551,7 +572,7 @@ body {
 -----------Presentation Accueil-----------------------------------
 ----------------------------------------------------------------- */
 .presentation {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -585,10 +606,17 @@ body {
 .howto__title {
   align-self: flex-start;
   padding-left: 5%;
+  width: 100%;
 }
 .howto__steps {
   width: 90%;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 800px) {
+  .howto__steps {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .howto__steps__box {
   height: 70px;
@@ -600,7 +628,14 @@ body {
   background-color: #f6f6f6;
   box-shadow: -3px 3px 5px #d7d7d7;
 }
+@media screen and (min-width: 800px) {
+  .howto__steps__box {
+    width: 30%;
+    margin: 0px;
+  }
+}
 .howto__steps__box__nbr {
+  flex-shrink: 0;
   color: white;
   background-color: #9356dc;
   width: 25px;
@@ -650,6 +685,13 @@ body {
 .restaurants__container {
   width: 90%;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 /* ----------------------------------------------------------------

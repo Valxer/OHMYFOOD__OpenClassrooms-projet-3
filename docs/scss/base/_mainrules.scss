@@ -8,3 +8,12 @@ body {
 body {
   margin: 0px;
 }
+
+body {
+  @include desktoponly {
+    background-color: rgb(152, 184, 221);
+  }
+  @include tabletonly {
+    background-color:rgb(142, 201, 127);
+  }
+}

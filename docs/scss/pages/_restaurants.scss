@@ -15,5 +15,10 @@
   &__container {
     width: 90%;
     margin-bottom: 60px;
+    @include desktoponly{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }

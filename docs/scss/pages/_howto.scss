@@ -12,10 +12,15 @@
   &__title {
     align-self: flex-start;
     padding-left: 5%;
+    width:100%
   }
   &__steps {
     width: 90%;
     margin-bottom: 50px;
+    @include both{
+      display: flex;
+      justify-content: space-between;
+    }
     &__box {
       height: 70px;
       margin-left: 12.5px;
@@ -25,7 +30,12 @@
       border-radius: 15px;
       background-color: rgb(246, 246, 246);
       box-shadow: -3px 3px 5px rgb(215, 215, 215);
+      @include both{
+        width: 30%;
+        margin: 0px;
+      }
       &__nbr {
+        flex-shrink: 0;
         color: white;
         background-color: $primary;
         width: 25px;

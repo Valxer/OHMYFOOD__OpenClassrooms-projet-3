@@ -6,3 +6,9 @@ $footer: #353535;
 $circlesize: 200px;
 
 $card-delay: 200ms;
+
+$breakpoints: (
+  tablet-min: 800px,
+  tablet-max: 1024px,
+  desktop: 1025px,
+);
