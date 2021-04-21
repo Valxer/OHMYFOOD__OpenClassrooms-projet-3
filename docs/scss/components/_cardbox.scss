@@ -59,6 +59,10 @@
     position: relative;
     width: 10%;
   }
+  &:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+  }
 }
 
 .like1,
