@@ -41,6 +41,75 @@ h2 {
   font-size: 35px;
 }
 
+/* ----------------------------------------------------------------
+-----------keyframes animations------------------------------------
+----------------------------------------------------------------- */
+@keyframes loading {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes out {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  70% {
+    opacity: 1;
+    z-index: 2;
+  }
+  95% {
+    opacity: 0;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+@keyframes fadein {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes kickin {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes iconrotate {
+  10% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotate(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotate(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
 /* Règles spéciales de polices*/
 @font-face {
   font-family: "Roboto";
@@ -251,16 +320,6 @@ body {
 /* ----------------------------------------------------------------
 -----------  animation de plats un à un ---------------------------
 ----------------------------------------------------------------- */
-@keyframes fadein {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 .card-1 {
   animation: 500ms fadein 200ms both;
 }
@@ -304,34 +363,6 @@ body {
 /* ----------------------------------------------------------------
 -----------animation checkbox--------------------------------------
 ----------------------------------------------------------------- */
-@keyframes kickin {
-  0% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes iconrotate {
-  10% {
-    transform: rotate(-90deg);
-  }
-  20% {
-    transform: rotate(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotate(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotate(-30deg) scale(1.08);
-  }
-  100% {
-    transform: rotate(5deg) scale(1);
-  }
-}
 .dishes__box:hover {
   box-shadow: -5px 5px 5px #858585;
   transition: 300ms;
@@ -728,34 +759,6 @@ body {
 /* ----------------------------------------------------------------
 -----------  Page Loader ------------------------------------------
 ----------------------------------------------------------------- */
-@keyframes loading {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-@keyframes out {
-  0% {
-    opacity: 1;
-    z-index: 2;
-  }
-  70% {
-    opacity: 1;
-    z-index: 2;
-  }
-  95% {
-    opacity: 0;
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -2;
-  }
-}
 .loader {
   width: 100%;
   height: 100%;
