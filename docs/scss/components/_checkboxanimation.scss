@@ -39,9 +39,9 @@
 
 .dishes__box:hover {
   .check {
-	display: flex;
-	justify-content: center;
-	  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform-origin: 50% 50%;
     animation: kickin ease 300ms forwards;
     &__icon {

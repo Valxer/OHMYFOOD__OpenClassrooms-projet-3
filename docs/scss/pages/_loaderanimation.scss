@@ -43,14 +43,14 @@
   background-color: rgb(234, 234, 234);
   animation: out 3s both linear;
   .loadlogo {
-	height: 50px;
-	position: absolute;
-	top: 10%;
+    height: 50px;
+    position: absolute;
+    top: 10%;
   }
   .circles {
-	  width: $circlesize;
-	  height: $circlesize;
-	  position: relative;
+    width: $circlesize;
+    height: $circlesize;
+    position: relative;
     &::after,
     &::before {
       content: "";

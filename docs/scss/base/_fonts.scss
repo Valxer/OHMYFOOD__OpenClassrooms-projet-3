@@ -35,7 +35,7 @@ body {
     font-weight: lighter;
   }
   &__like {
-   @extend %littlesize;
+    @extend %littlesize;
   }
 }
 
@@ -65,7 +65,7 @@ h2 {
 .search {
   color: $footer;
   &__txt {
-    @extend %tinysize;
+    @extend %foodsize;
     @extend %bold;
     color: $footer;
   }

@@ -4,15 +4,19 @@
 
 .like2 {
   background: -webkit-linear-gradient(-90deg, $primary, $secondary);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .like1 {
-	z-index: 1;
-	background: white;
+  z-index: 1;
+  background-color: rgb(246, 246, 246);
   &:hover {
     opacity: 0;
     transition: 700ms;
   }
+}
+.cardbox__like .like1 {
+  background-color: white;
 }

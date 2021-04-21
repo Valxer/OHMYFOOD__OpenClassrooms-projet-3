@@ -21,11 +21,11 @@ body {
   font-size: 20px;
 }
 
-.dish_price, .dish_sub, .footer__txtbox__line__icon, .footer__txt, .cardbox__img__txt, .fa-store, .fa-bars, .howto__steps__box__nbr, .howto__steps__box__txt, .search__txt {
+.dish_price, .dish_sub, .footer__txtbox__line__icon, .footer__txt, .cardbox__img__txt, .fa-store, .fa-bars, .howto__steps__box__nbr, .howto__steps__box__txt {
   font-size: 15px;
 }
 
-.btn, .dish_name, .food__block__title, .cardbox__txt__place, .cardbox__txt__title, .presentation__txt {
+.btn, .dish_name, .food__block__title, .cardbox__txt__place, .cardbox__txt__title, .presentation__txt, .search__txt {
   font-size: 18px;
 }
 
@@ -196,7 +196,8 @@ body {
   width: 10%;
 }
 
-.like1, .like2 {
+.like1,
+.like2 {
   position: absolute;
   top: -10px;
 }
@@ -206,17 +207,22 @@ body {
 ----------------------------------------------------------------- */
 .like2 {
   background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .like1 {
   z-index: 1;
-  background: white;
+  background-color: #f6f6f6;
 }
 .like1:hover {
   opacity: 0;
   transition: 700ms;
+}
+
+.cardbox__like .like1 {
+  background-color: white;
 }
 
 /* ----------------------------------------------------------------
