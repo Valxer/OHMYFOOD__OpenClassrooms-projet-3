@@ -38,6 +38,8 @@
 }
 
 .dishes__box:hover {
+  box-shadow: -5px 5px 5px rgb(133, 133, 133);
+  transition: 300ms;
   .check {
     display: flex;
     justify-content: center;

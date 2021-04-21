@@ -332,6 +332,10 @@ body {
     transform: rotate(5deg) scale(1);
   }
 }
+.dishes__box:hover {
+  box-shadow: -5px 5px 5px #858585;
+  transition: 300ms;
+}
 .dishes__box:hover .check {
   display: flex;
   justify-content: center;
