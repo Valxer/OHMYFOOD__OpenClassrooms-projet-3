@@ -1,0 +1,19 @@
+/* ----------------------------------------------------------------
+-----------  animation de plats un à un ---------------------------
+----------------------------------------------------------------- */
+@keyframes fadein {
+	0% {
+		transform: translateY(30px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@for $i from 1 through 10 {
+	.card-#{$i} {
+	  animation: 500ms fadein $card-delay * $i both;
+	}
+  }

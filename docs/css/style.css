@@ -229,6 +229,59 @@ body {
 }
 
 /* ----------------------------------------------------------------
+-----------  animation de plats un à un ---------------------------
+----------------------------------------------------------------- */
+@keyframes fadein {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.card-1 {
+  animation: 500ms fadein 200ms both;
+}
+
+.card-2 {
+  animation: 500ms fadein 400ms both;
+}
+
+.card-3 {
+  animation: 500ms fadein 600ms both;
+}
+
+.card-4 {
+  animation: 500ms fadein 800ms both;
+}
+
+.card-5 {
+  animation: 500ms fadein 1000ms both;
+}
+
+.card-6 {
+  animation: 500ms fadein 1200ms both;
+}
+
+.card-7 {
+  animation: 500ms fadein 1400ms both;
+}
+
+.card-8 {
+  animation: 500ms fadein 1600ms both;
+}
+
+.card-9 {
+  animation: 500ms fadein 1800ms both;
+}
+
+.card-10 {
+  animation: 500ms fadein 2000ms both;
+}
+
+/* ----------------------------------------------------------------
 -----------Règles du header----------------------------------------
 ----------------------------------------------------------------- */
 .header {
@@ -553,6 +606,10 @@ body {
   }
 }
 @keyframes out {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
   70% {
     opacity: 1;
     z-index: 2;
