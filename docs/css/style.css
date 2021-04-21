@@ -408,6 +408,9 @@ body {
 .footer__txtbox__line a:link {
   color: white;
 }
+.footer__txtbox__line a:visited {
+  color: white;
+}
 
 /* ----------------------------------------------------------------
 -----------Règles bannières----------------------------------------
