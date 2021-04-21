@@ -753,7 +753,7 @@ body {
   animation: out 3s both linear;
 }
 .loader .loadlogo {
-  height: 50px;
+  height: 45px;
   position: absolute;
   top: 10%;
 }
