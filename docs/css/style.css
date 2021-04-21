@@ -221,7 +221,7 @@ body {
 ----------------------------------------------------------------- */
 .like2 {
   background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
 }

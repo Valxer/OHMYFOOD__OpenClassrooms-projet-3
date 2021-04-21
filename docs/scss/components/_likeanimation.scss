@@ -4,7 +4,7 @@
 
 .like2 {
   background: -webkit-linear-gradient(-90deg, $primary, $secondary);
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
 }
