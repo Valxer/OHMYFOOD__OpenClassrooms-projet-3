@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   &__header {
-    width: 90%;
+    width: 100%;
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,7 @@
     margin-bottom: -10px;
     &__title {
       width: 80%;
+      padding-left: 5%;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -55,10 +56,11 @@
     box-shadow: -5px 5px 5px lightgrey;
     border-radius: 15px;
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
     &__txt {
-      width: 80%;
+      width: 90%;
       white-space: nowrap;
       overflow: hidden;
     }
@@ -82,13 +84,18 @@
 }
 
 .dish_price {
-  width: 10%;
+  width: 50px;
   align-self: flex-end;
-  padding-right: 15px;
+  padding-right: 5px;
+  padding-left: 10px;
 }
 
-/*à changer quand animation*/
 .check {
-  width: 10%;
+  width: 50px;
+  background-color: $tertiary;
+  height: 65px;
   display: none;
+  &__icon {
+    color: white;
+  }
 }

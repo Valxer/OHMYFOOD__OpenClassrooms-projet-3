@@ -282,6 +282,53 @@ body {
 }
 
 /* ----------------------------------------------------------------
+-----------animation checkbox--------------------------------------
+----------------------------------------------------------------- */
+@keyframes kickin {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes iconrotate {
+  10% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotate(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotate(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+.dishes__box:hover .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+  animation: kickin ease 300ms forwards;
+}
+.dishes__box:hover .check__icon {
+  animation: iconrotate ease 500ms forwards;
+}
+.dishes__box:hover .dish_price {
+  transform-origin: 50% 50%;
+  animation: kickin ease 300ms forwards;
+  margin-right: 0px;
+}
+
+/* ----------------------------------------------------------------
 -----------Règles du header----------------------------------------
 ----------------------------------------------------------------- */
 .header {
@@ -373,7 +420,7 @@ body {
   align-items: center;
 }
 .food__header {
-  width: 90%;
+  width: 100%;
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
@@ -382,6 +429,7 @@ body {
 }
 .food__header__title {
   width: 80%;
+  padding-left: 5%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -414,11 +462,12 @@ body {
   box-shadow: -5px 5px 5px lightgrey;
   border-radius: 15px;
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
 }
 .dishes__box__txt {
-  width: 80%;
+  width: 90%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -440,15 +489,20 @@ body {
 }
 
 .dish_price {
-  width: 10%;
+  width: 50px;
   align-self: flex-end;
-  padding-right: 15px;
+  padding-right: 5px;
+  padding-left: 10px;
 }
 
-/*à changer quand animation*/
 .check {
-  width: 10%;
+  width: 50px;
+  background-color: #99e2d0;
+  height: 65px;
   display: none;
+}
+.check__icon {
+  color: white;
 }
 
 /* ----------------------------------------------------------------
