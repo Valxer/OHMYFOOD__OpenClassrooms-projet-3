@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  background-color: rgb(234, 234, 234);
+  background-color: lighten($primary,30) /*rgb(234, 234, 234)*/;
   animation: out 3s both linear;
   .loadlogo {
     height: 45px;

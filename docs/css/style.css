@@ -749,7 +749,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  background-color: #eaeaea;
+  background-color: #e4d5f6;
   animation: out 3s both linear;
 }
 .loader .loadlogo {
