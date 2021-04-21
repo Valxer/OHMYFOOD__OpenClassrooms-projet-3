@@ -1,0 +1,67 @@
+/* ----------------------------------------------------------------
+-----------  Page Loader ------------------------------------------
+----------------------------------------------------------------- */
+
+@keyframes loading {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes out {
+  70% {
+    opacity: 1;
+    z-index: 2;
+  }
+  95% {
+    opacity: 0;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(234, 234, 234);
+  animation: out 3s both linear;
+  .loadlogo {
+	height: 50px;
+	position: absolute;
+	top: 10%;
+  }
+  .circles {
+	  width: $circlesize;
+	  height: $circlesize;
+	  position: relative;
+    &::after,
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 7px solid $primary;
+      position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      animation: loading 1s linear both 6;
+    }
+    &::after {
+      animation-delay: 500ms;
+      border-color: $secondary;
+    }
+  }
+}
