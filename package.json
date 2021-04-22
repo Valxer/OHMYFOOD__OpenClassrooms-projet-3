@@ -1,0 +1,25 @@
+{
+  "name": "kevinlevanphung_3_10042021",
+  "version": "1.0.0",
+  "description": "Projet 3 : Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch scss:css",
+    "prefix": "postcss ./docs/css/style.css --use autoprefixer -d ./docs/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valxer/KevinLeVanPhung_3_10042021.git"
+  },
+  "author": "Le Van Phung Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valxer/KevinLeVanPhung_3_10042021/issues"
+  },
+  "homepage": "https://github.com/Valxer/KevinLeVanPhung_3_10042021#readme",
+  "browserslist": "last 4 versions",
+  "dependencies": {}
+}
