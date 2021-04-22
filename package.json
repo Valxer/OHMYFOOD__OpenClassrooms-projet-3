@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass": "sass --watch scss:css",
+    "sass": "sass --watch ./docs/scss:./docs/css",
     "prefix": "postcss ./docs/css/style.css --use autoprefixer -d ./docs/css/"
   },
   "repository": {
