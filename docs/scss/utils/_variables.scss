@@ -1,11 +1,19 @@
+// couleurs ==================================
+
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $footer: #353535;
 
+// taille cercles loader =====================
+
 $circlesize: 200px;
 
+// délai entre les plats =====================
+
 $card-delay: 200ms;
+
+// breakpoints ===============================
 
 $breakpoints: (
   tablet-min: 800px,
