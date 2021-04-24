@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin bigscreen {
+  @media screen and (min-width: map-get($breakpoints, bigscreen )) {
+    @content;
+  }
+}

@@ -11,7 +11,7 @@
 
 .like1 {
   z-index: 1;
-  background-color: rgb(246, 246, 246);
+  background-color: $backgrey;
   &:hover {
     opacity: 0;
     transition: 700ms;

@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  @include desktoponly{
+  @include bigscreen{
+    padding-top: 60px;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 15px;
@@ -28,8 +29,9 @@
   }
   &__title{
     margin-left: 25px;
-    @media screen and (min-width: 1100px) {
-    margin-right: 5%;
+    @include desktoponly {
+      text-align: center;
+      margin-right: 5%;
     }
   }
   &__txtbox__line {

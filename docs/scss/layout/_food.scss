@@ -3,7 +3,7 @@
 ----------------------------------------------------------------- */
 
 .food {
-  background-color: rgb(246, 246, 246);
+  background-color: $backgrey;
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -13,6 +13,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @include bigscreen {
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: -50px;
+    z-index: 2;
+  }
   &__header {
     width: 100%;
     margin-top: 5px;

@@ -3,10 +3,15 @@
 ----------------------------------------------------------------- */
 
 .restaurants {
+  background-color: $backgrey;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include bigscreen {
+  margin-bottom: -50px;
+  z-index: 1;
+  }
   &__title {
     align-self: flex-start;
     margin-left: 5%;

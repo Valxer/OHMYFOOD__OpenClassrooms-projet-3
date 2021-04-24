@@ -4,6 +4,7 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $footer: #353535;
+$backgrey: rgb(235, 235, 235);
 
 // taille cercles loader =====================
 
@@ -19,4 +20,5 @@ $breakpoints: (
   tablet-min: 800px,
   tablet-max: 1024px,
   desktop: 1025px,
+  bigscreen: 1440px
 );
