@@ -56,10 +56,6 @@ Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/
 - Validation W3C CSS : à passer, warning autorisés
 - Compatibilité : Dernières versions de Chrome & Firefox
 
-## Convention nommage commit 
-
-Gitmoji https://gitmoji.carloscuesta.me/
-
 ## Tester le projet
 
 Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [valxer.github.io/KevinLeVanPhung_3_10042021/](https://valxer.github.io/KevinLeVanPhung_3_10042021/)
