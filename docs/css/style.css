@@ -969,7 +969,7 @@ body {
 ----------------------------------------------------------------- */
 .howto {
   background-color: white;
-  margin-top: 50px;
+  margin: 30px 0px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -990,7 +990,7 @@ body {
 }
 .howto__steps {
   width: 90%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 800px) {
   .howto__steps {
