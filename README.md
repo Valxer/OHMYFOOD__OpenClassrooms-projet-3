@@ -58,4 +58,5 @@ Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [valxer.github.io/KevinLeVanPhung_3_10042021/](https://valxer.github.io/KevinLeVanPhung_3_10042021/)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [valxer.github.io/KevinLeVanPhung_3_10042021/](https://valxer.github.io/OHMYFOOD__OpenClassrooms-projet-3/)
+
